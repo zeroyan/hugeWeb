@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #000000;
+    color: #ffffff;
+}
+.container{
+    width: 100%;
+    height: auto;
+    margin: 50px auto;
+}
+.container p, .container table{
+    text-align: center;
+}
+.container p{
+    margin-bottom: 5px;
+}
+.container table{
+    width: 50%;
+    margin: 0 auto;
+    border: solid #12ADBD 3px;
+}
+.container table td{
+    border: solid #12ADBD 1px;
+}
+
+@media screen and (max-width: 480px){
+    .container table{
+        width: 95%;
+    }
+}
+@media screen and (max-width: 798px){
+    .container table{
+        width: 85%;
+    }
+}

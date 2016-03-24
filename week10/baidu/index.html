@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>week1_baidu首页</title>
+    <link rel="stylesheet" type="text/css" href="css/app.css">
+</head>
+<body>
+<div class="container">
+    <!--导航栏-->
+    <div class="nav">
+    	<div class="nav-right">
+            <a href="#">糯米</a>
+            <a href="#">新闻</a>
+            <a href="#">hao123</a>
+            <a href="#">地图</a>
+            <a href="#">视频</a>
+            <a href="#">贴吧</a>
+            <a href="#">登陆</a>
+            <a href="#">设置</a>
+            <a href="#" class="nav-more">更多产品</a>
+        </div>
+        <div class="nav-left">
+            <a href="#">宝箱</a>
+            <a href="#">换肤</a>
+            <a href="#">消息</a>
+            <a href="#">显示频道</a>
+        </div>
+        <div class="nav-more-list">
+            <a href="#">更多产品</a>
+            <a href="#"><img src="./img/more_music.png"/>音乐</a>
+            <a href="#"><img src="./img/more_image.png"/>图片</a>
+            <a href="#"><img src="./img/more_hidao.png"/>知道</a>
+            <a href="#"><img src="./img/more_wenku.png"/>文库</a>
+            <a href="#"><img src="./img/more_bang.png"/>风云榜</a>
+            <a href="#">全部产品>></a>
+        </div>
+    </div>
+    <!--中间百度一下-->
+    <div class="context">
+        <img src="img/bd_logo1.png" class="context-logo"/>
+        <form action="https://www.baidu.com/s" method="get" target="_blank">
+            <img src="img/sm_micro.png" />
+            <input type="text" name="wd" />
+            <input id="baidu" type="submit" value="百度一下" />
+        </form>
+    </div>
+
+    <!--tab切换-->
+    <div class="tabBox">
+        <ul>
+            <li class="li-on">我的关注</li>
+            <li class="">热门推荐</li>
+            <li class="">最新视频</li>
+        </ul>
+        <div class="div-on">
+            1
+        </div>
+        <div class="">
+            2
+        </div>
+        <div class="">
+            3
+        </div>
+    </div>
+    <!--底部信息-->
+    <div class="footer">
+        <span><a href="#" style="color: #3385ff">设为首页</a></span>
+        <span>©2015Baidu</span>
+        <span><a href="#">使用百度前必读</a></span>
+        <span><a href="#">意见反馈</a></span>
+        <span>京ICP证030173号<img src="img/copy_rignt_24.png" style="height: .5rem"></span>
+    </div>
+</div>
+
+<script src="module/js/jquery.min.js"></script>
+<script src="js/addons.js"></script>
+<script src="js/app.js"></script>
+</body>
+
+</html>

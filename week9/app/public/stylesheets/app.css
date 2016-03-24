@@ -1,0 +1,110 @@
+/*顶部*/
+.app-header-box{
+    margin-bottom: 0;
+}
+.app-header{
+    text-align: center;
+    overflow: hidden;
+    border-bottom: solid 1px #5FABF0;
+}
+.app-header .middle{
+    float: left;
+    width: 100%;
+    height: 33px;
+}
+.app-header .middle .inner{
+    margin: 0 90px 0 90px;
+}
+.app-header .left{
+    float: left;
+    width: 90px;
+    margin-left: -100%;
+    height: 33px;
+}
+.app-header .right{
+    float: left;
+    width: 90px;
+    margin-left: -90px;
+    height: 33px;
+}
+.app-header div[class*="baidu-"]{
+    display: inline-block;
+    width: 40px;
+    height: 100%;
+    font-size: 15px;
+    line-height: 40px;
+    background-image: url("http://m.baidu.com/static/news/webapp/webappandroid/img/bg-new-toolbar_6e9bc53.png");
+    -webkit-background-size: 40px 500px;
+    background-size: 40px 500px;
+    background-repeat: no-repeat;
+}
+.app-header .title{
+    height: 40px;
+    z-index: 2;
+    background-image: url("http://m.baidu.com/static/news/webapp/webappandroid/img/bg-news-logo_344ce44.png");
+    background-repeat: no-repeat;
+    background-position: center 4px;
+    background-size: 70px auto;
+    -webkit-background-size: 77px auto;
+}
+.app-header .baidu-logo{
+    background-position: center 0px;
+}
+.app-header .baidu-user{
+     background-position: center -468px;
+     margin-left: 2px;
+}
+.app-header .baidu-search{
+    background-position: center -166px;
+}
+.app-header .baidu-more{
+    background-position: center -111px;
+    margin-left: 2px;
+}
+/*类别*/
+.app-cate{
+    margin-top: 0;
+}
+.app-cate li a{
+    padding: .4em 1.2em;
+}
+.app-cate li a:focus{
+    background-color: inherit;
+}
+.app-cate .app-active{
+    text-decoration: underline;
+}
+/*内容*/
+.loading{
+    text-align: center;
+}
+.loading i{
+    font-size: 300%;
+    color: #0084c7;
+
+}
+.content{
+    display: none;
+}
+.app-slides img{
+    height: 200px;
+}
+.app-loadMore{
+    position: relative;
+    width: 200px;
+    left: 50%;
+    margin-left: -100px;
+    margin-bottom: 20px;
+}
+/*悬浮栏*/
+.app-goTop{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 50px;
+    height: 50px;
+    display: none;
+}
+.app-goTop a{
+    padding: 2px;
+}

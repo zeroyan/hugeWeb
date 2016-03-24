@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>极客学院</title>
+    <link rel="stylesheet" type="text/css" href="css/app.css">
+</head>
+<body>
+
+<!--头部-->
+<header>
+    <a href="#">
+        <h2><img src="http://s1.jikexueyuan.com/common/images/logo_c8caff4.png" class="logo" alt="极客学院"></h2>
+    </a>
+
+    <div class="search-section">
+        <div class="headsearch" id="headsearch" action="#">
+            <input class="search-text" type="text" name="q" autocomplete="off" id="web_search_header" placeholder="搜索课程、问答或Wiki">
+            <input type="submit" class="search-btn" value="">
+        </div>
+    </div>
+
+    <div class="loginbox">
+        <span class="my-massage2" id="messagebox"><i class="unread-num">&nbsp;</i></span>
+        <span>|</span>
+        <span><a href="#" class="">我的课程</a></span>
+        <span>|</span>
+        <a href="#" target="_blank" class="vip-icon"><img class="header-vip" src="http://s1.jikexueyuan.com/common/images/vip-tiyan_e6b2f04.png" alt="vip"></a>
+        <div class="userMenu">
+            <a href="#" id="userName">极客学员</a>
+            <i class="arrow">&darr;</i>
+            <ul>
+                <li>个人主页</li>
+                <li>个人中心</li>
+                <li>我的课程</li>
+                <li>我的VIP</li>
+                <li>退出</li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<div class="div-hr-color"></div>
+
+<!--顶部导航-->
+<nav>
+    <div class="navbox">
+        <a href="#">首页</a>
+        <a href="#" class="">职业课程</a>
+        <a href="#" class="">就业学习</a>
+        <a href="#" class="" >极客社区</a>
+        <a href="#" >极客＋</a>
+        <ul class="navpanel cf">
+            <li class="panel-item">
+                <span class="angle"></span>
+                <ul class="item-box">
+                    <li><a target="_blank" href="#" class="">课程库</a></li>
+                    <li><a target="_blank" href="#" class="">知识体系图</a></li>
+                    <li><a target="_blank" href="#">职业路径图</a></li>
+                    <li><a target="_blank" href="#">系列课程</a></li>
+                </ul>
+            </li>
+            <li class="panel-item">
+                <span class="angle"></span>
+                <ul class="item-box">
+                    <li><a target="_blank" href="#" class="">课程库</a></li>
+                    <li><a target="_blank" href="#" class="">知识体系图</a></li>
+                    <li><a target="_blank" href="#">职业路径图</a></li>
+                    <li><a target="_blank" href="#">系列课程</a></li>
+                </ul>
+            </li>
+            <li class="panel-item">
+                <span class="angle"></span>
+                <ul class="item-box">
+                    <li><a target="_blank" href="#" class="">课程库</a></li>
+                    <li><a target="_blank" href="#" class="">知识体系图</a></li>
+                    <li><a target="_blank" href="#">职业路径图</a></li>
+                    <li><a target="_blank" href="#">系列课程</a></li>
+                </ul>
+            </li>
+            <li class="panel-item">
+                <span class="angle"></span>
+                <ul class="item-box">
+                    <li><a target="_blank" href="#" class="">课程库</a></li>
+                    <li><a target="_blank" href="#" class="">知识体系图</a></li>
+                    <li><a target="_blank" href="#">职业路径图</a></li>
+                    <li><a target="_blank" href="#">系列课程</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="user-need">
+        <a href="#">
+            <span><img src="http://s1.jikexueyuan.com/common/images/vip-icon_76ae754.png">VIP会员</span>
+        </a>
+        <a href="#" target="_blank">
+            <span><img src="http://s1.jikexueyuan.com/common/images/star-icon_c593bc1.png">求课程</span>
+        </a>
+
+        <a href="#" target="_blank"><span style="position: relative;"><img src="http://s1.jikexueyuan.com/common/images/dl-icon_4bc18a7.png"><img src="http://s1.jikexueyuan.com/common/images/newicon_56b11ef.png" style="width: 14px;height: 15px;position: absolute;z-index: 2000;right: -19px;top: -14px;display: block;">APP下载</span></a>
+
+    </div>
+</nav>
+<div class="div-hr-shadow"></div>
+
+<!--中间内容-->
+<div class="container">
+    <!--第一个三栏广告-->
+    <div class="col-3">
+        <!--中间-->
+        <div class="col-3-middle">
+            <div class="inner">
+                <!--<div class="slides">-->
+                    <!--<span id="banner-left" class="arrow-left"></span>-->
+                    <!--<span id="banner-right" class="arrow-right"></span>-->
+                    <!--<div class="swiper-wrapper">-->
+                        <!--<a href="#"><img class="swiper-wrapper-img" src="http://a1.jikexueyuan.com/home/201601/19/6b3e/569d9a259a9fa.jpg"/></a>-->
+                        <!--<a href="#"><img class="swiper-wrapper-img" src="http://a1.jikexueyuan.com/home/201601/26/d4ce/56a6e34aeb2d8.jpg"/></a>-->
+                        <!--<a href="#"><img class="swiper-wrapper-img" src="http://a1.jikexueyuan.com/home/201601/25/4db9/56a57f4e8d229.jpg"/></a>-->
+                        <!--<a href="#"><img class="swiper-wrapper-img" src="http://a1.jikexueyuan.com/home/201601/13/d205/5695b7bfd0e6d.jpg"/></a>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <div id="slide">
+                    <span id="banner-left" class="arrow-left"></span>
+                    <span id="banner-right" class="arrow-right"></span>
+                    <div id="picList">
+                        <ul class="cl">
+                            <li>
+                                <a href="#" target="_blank">
+                                    <img src="http://a1.jikexueyuan.com/home/201601/19/6b3e/569d9a259a9fa.jpg"/>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank">
+                                    <img src="http://a1.jikexueyuan.com/home/201601/26/d4ce/56a6e34aeb2d8.jpg"/>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank">
+                                    <img src="http://a1.jikexueyuan.com/home/201601/26/d4ce/56a6e34aeb2d8.jpg"/>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank">
+                                    <img src="http://a1.jikexueyuan.com/home/201601/13/d205/5695b7bfd0e6d.jpg"/>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--左边-->
+        <div class="col-3-left">
+            <div class="all-sort-list">
+                <div class="item">
+                    <h3><a href="">移动开发</a><span>&gt;</span></h3>
+                    <div class="item-list">
+                        <dl class="">
+                            <dt><a href="#">应用开发</a></dt>
+                            <dd>
+                                <a href="#">Android</a>
+                                <a href="#">IOS</a>
+                            </dd>
+                        </dl>
+                        <dl class="">
+                            <dt><a href="#">游戏开发</a></dt>
+                            <dd>
+                                <a href="#">Cocos</a>
+                                <a href="#">Unity3D</a>
+                                <a href="#">SpriteKit2D</a>
+                                <a href="#">Unreal</a>
+                            </dd>
+                        </dl>
+                        <dl class="">
+                            <dt><a href="#">常用框架</a></dt>
+                            <dd>
+                                <a href="#">Cordova</a>
+                                <a href="#">React Active</a>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="item">
+                    <h3><a href="">前端开发</a><span>&gt;</span></h3>
+                    <div class="item-list">
+                        <dl class="">
+                            <dt><a href="#">前端基础</a></dt>
+                            <dd>
+                                <a href="#">Android</a>
+                                <a href="#">IOS</a>
+                            </dd>
+                        </dl>
+                        <dl class="">
+                            <dt><a href="#">前端进阶</a></dt>
+                            <dd>
+                                <a href="#">Cocos</a>
+                                <a href="#">Unity3D</a>
+                                <a href="#">SpriteKit2D</a>
+                                <a href="#">Unreal</a>
+                            </dd>
+                        </dl>
+                        <dl class="">
+                            <dt><a href="#">前端框架</a></dt>
+                            <dd>
+                                <a href="#">Cordova</a>
+                                <a href="#">React Active</a>
+                            </dd>
+                        </dl>
+                        <dl class="">
+                            <dt><a href="#">HTML5游戏</a></dt>
+                            <dd>
+                                <a href="#">Cordova</a>
+                                <a href="#">React Active</a>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="item">
+                    <h3><a href="">后端开发</a><span>&gt;</span></h3>
+                    <div class="item-list">
+                        <dl class="">
+                            <dt><a href="#">PYTHON</a></dt>
+                            <dd>
+                                <a href="#">Android</a>
+                                <a href="#">IOS</a>
+                            </dd>
+                        </dl>
+                        <dl class="">
+                            <dt><a href="#">PHP</a></dt>
+                            <dd>
+                                <a href="#">Cocos</a>
+                                <a href="#">Unity3D</a>
+                                <a href="#">SpriteKit2D</a>
+                                <a href="#">Unreal</a>
+                            </dd>
+                        </dl>
+                        <dl class="">
+                            <dt><a href="#">NODE.JS</a></dt>
+                            <dd>
+                                <a href="#">Cordova</a>
+                                <a href="#">React Active</a>
+                            </dd>
+                        </dl>
+                        <dl class="">
+                            <dt><a href="#">ASP.NET</a></dt>
+                            <dd>
+                                <a href="#">Cordova</a>
+                                <a href="#">React Active</a>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="item">
+                    <h3><a href="">基础知识</a><span>&gt;</span></h3>
+                    <div class="item-list">
+                        <dl class="">
+                            <dt><a href="#">应用开发</a></dt>
+                            <dd>
+                                <a href="#">Android</a>
+                                <a href="#">IOS</a>
+                            </dd>
+                        </dl>
+                        <dl class="">
+                            <dt><a href="#">游戏开发</a></dt>
+                            <dd>
+                                <a href="#">Cocos</a>
+                                <a href="#">Unity3D</a>
+                                <a href="#">SpriteKit2D</a>
+                                <a href="#">Unreal</a>
+                            </dd>
+                        </dl>
+                        <dl class="">
+                            <dt><a href="#">常用框架</a></dt>
+                            <dd>
+                                <a href="#">Cordova</a>
+                                <a href="#">React Active</a>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-3-right">
+            <div class="news">
+                <h3>快讯</h3>
+                <ul class="list">
+                    <li class="item">
+                        <a href="#" target="_blank">猴年送福 IT图书每天免费领！</a>
+                    </li>
+                    <li class="item">
+                        <a href="#" target="_blank">Android开发工程师速成记</a>
+                    </li>
+                    <li class="item">
+                        <a href="#" target="_blank">iOS团购App实战项目 限免中</a>
+                    </li>
+                    <li class="item">
+                        <a href="#" target="_blank">大数据职业路径图 重磅上线</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="recommend">
+                <ul class="start-list cf" node-type="recommend-start-list" style="display: block;">
+                    <li node-type="recommend-move-event">
+                        <span class="question icon"></span>
+                        <span class="title">问答</span>
+                    </li>
+                    <li node-type="recommend-move-event">
+                        <span class="wiki icon"></span>
+                        <span class="title">wiki</span>
+                    </li>
+                    <li node-type="recommend-move-event">
+                        <span class="lession icon"></span>
+                        <span class="title">课程</span>
+                    </li>
+                    <li node-type="recommend-move-event">
+                        <span class="group icon"></span>
+                        <span class="title">社群</span>
+                    </li>
+                    <li>
+                        <span class="download icon"></span>
+                        <span class="title">下载</span>
+                    </li>
+                    <li>
+                        <span class="known icon"></span>
+                        <span class="title">知识</span>
+                    </li>
+                    <li>
+                        <span class="occupation icon"></span>
+                        <span class="title">职业</span>
+                    </li>
+                    <li>
+                        <span class="vip icon"></span>
+                        <span class="title">VIP</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!--&lt;!&ndash;第二个双栏每周计划&ndash;&gt;-->
+    <!--<div class="col-2">-->
+        <!--<div class="col-2-left">我是左边</div>-->
+        <!--<div class="col-2-right">我是右边</div>-->
+    <!--</div>-->
+
+    <!--课程一览-->
+    <div class="hot-lesson">
+        <ul class="cf">
+            <li class="on">热门推荐</li>
+            <li class="">最新课程</li>
+            <li class="">免费课程</li>
+            <li class="">项目实战</li>
+            <li class="">全球首发</li>
+            <li class="">企业合作</li>
+        </ul>
+        <div class="lesson-list lesson-on">
+            <ul class="cf">
+                <li>
+                    <div class="lessonimg-box">
+                        <a href="#" target="_blank" >
+                            <img src="http://a1.jikexueyuan.com/home/201601/20/b856/569eeab4307dd.jpg" class="lessonimg" title="微信 web 开发者工具详解" alt="微信 web 开发者工具详解">
+                        </a>
+                    </div>
+                    <div class="lesson-infor" style="height: 75px;">
+                        <h2 class="lesson-info-h2"><a href="#" target="_blank">微信 web 开发者工具详解</a></h2>
+                        <p>
+                            本课程讲解微信 web 开发者工具的产生背景、所解决的问题、使用的场景以及通过实例为大家详细阐述微信 web 开发者工具的具体使用方法，让大家掌握、熟练运用该工具，方便今后的微信开发。
+                        </p>
+                        <div class="timeandicon">
+                            <div class="cf">
+                                <dl>
+                                    <dd class="mar-b8"><i class="time-icon"></i><em>4课时36分钟</em>
+                                    </dd>
+                                    <dd class="zhongji" style="margin-top: 3px">
+                                        <i class="xinhao-icon"></i><em>中级</em>
+                                    </dd>
+                                </dl>
+                                <em class="learn-number">4611人学习</em>
+                            </div>
+                            <div class="cf">
+                                <div class="lessonicon-box">
+                                    <a href="#">
+                                        <img width="16" src="http://a1.jikexueyuan.com/home/201502/04/d12f/54d1c99185f23.png" alt="phpbase" title="PHP 基础" style="margin-left: 85px">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul class="cf">
+                <li>
+                    <div class="lessonimg-box">
+                        <a href="#" target="_blank" >
+                            <img src="http://a1.jikexueyuan.com/home/201601/26/857b/56a6da2171c35.jpg" class="lessonimg" title="微信 web 开发者工具详解" alt="微信 web 开发者工具详解">
+                        </a>
+                    </div>
+                    <div class="lesson-infor" style="height: 75px;">
+                        <h2 class="lesson-info-h2"><a href="#" target="_blank">使用 jQuery 实现多种类型的导航条</a></h2>
+                        <p>
+                            本课程主要通过 jQuery 和 CSS3 进行实际应用，实现在网站中常见的多种类型的导航条，学习完这个课程可以轻松的应用 jQuery 和 CSS3 的各种交互特效，以及 jQuery 的动画插件jquery.easing.1.3 的使用。
+                        </p>
+                        <div class="timeandicon">
+                            <div class="cf">
+                                <dl>
+                                    <dd class="mar-b8"><i class="time-icon"></i><em>4课时36分钟</em>
+                                    </dd>
+                                    <dd class="zhongji" style="margin-top: 3px">
+                                        <i class="xinhao-icon"></i><em>中级</em>
+                                    </dd>
+                                </dl>
+                                <em class="learn-number">4611人学习</em>
+                            </div>
+                            <div class="cf">
+                                <div class="lessonicon-box">
+                                    <a href="#">
+                                        <img width="16" src="http://a1.jikexueyuan.com/home/201502/04/d12f/54d1c99185f23.png" alt="phpbase" title="PHP 基础" style="margin-left: 85px">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="lesson-list">
+            <ul class="cf">
+                <li>
+                    <div class="lessonimg-box">
+                        <a href="#" target="_blank" >
+                            <img src="http://a1.jikexueyuan.com/home/201601/20/b856/569eeab4307dd.jpg" class="lessonimg" title="微信 web 开发者工具详解" alt="微信 web 开发者工具详解">
+                        </a>
+                    </div>
+                    <div class="lesson-infor" style="height: 75px;">
+                        <h2 class="lesson-info-h2"><a href="#" target="_blank">微信 web 开发者工具详解</a></h2>
+                        <p>
+                            本课程讲解微信 web 开发者工具的产生背景、所解决的问题、使用的场景以及通过实例为大家详细阐述微信 web 开发者工具的具体使用方法，让大家掌握、熟练运用该工具，方便今后的微信开发。
+                        </p>
+                        <div class="timeandicon">
+                            <div class="cf">
+                                <dl>
+                                    <dd class="mar-b8"><i class="time-icon"></i><em>4课时36分钟</em>
+                                    </dd>
+                                    <dd class="zhongji" style="margin-top: 3px">
+                                        <i class="xinhao-icon"></i><em>中级</em>
+                                    </dd>
+                                </dl>
+                                <em class="learn-number">4611人学习</em>
+                            </div>
+                            <div class="cf">
+                                <div class="lessonicon-box">
+                                    <a href="#">
+                                        <img width="16" src="http://a1.jikexueyuan.com/home/201502/04/d12f/54d1c99185f23.png" alt="phpbase" title="PHP 基础" style="margin-left: 85px">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="lesson-list">
+            <ul class="cf">
+                <li>
+                    <div class="lessonimg-box">
+                        <a href="#" target="_blank" >
+                            <img src="http://a1.jikexueyuan.com/home/201601/20/b856/569eeab4307dd.jpg" class="lessonimg" title="微信 web 开发者工具详解" alt="微信 web 开发者工具详解">
+                        </a>
+                    </div>
+                    <div class="lesson-infor" style="height: 75px;">
+                        <h2 class="lesson-info-h2"><a href="#" target="_blank">微信 web 开发者工具详解</a></h2>
+                        <p>
+                            本课程讲解微信 web 开发者工具的产生背景、所解决的问题、使用的场景以及通过实例为大家详细阐述微信 web 开发者工具的具体使用方法，让大家掌握、熟练运用该工具，方便今后的微信开发。
+                        </p>
+                        <div class="timeandicon">
+                            <div class="cf">
+                                <dl>
+                                    <dd class="mar-b8"><i class="time-icon"></i><em>4课时36分钟</em>
+                                    </dd>
+                                    <dd class="zhongji" style="margin-top: 3px">
+                                        <i class="xinhao-icon"></i><em>中级</em>
+                                    </dd>
+                                </dl>
+                                <em class="learn-number">4611人学习</em>
+                            </div>
+                            <div class="cf">
+                                <div class="lessonicon-box">
+                                    <a href="#">
+                                        <img width="16" src="http://a1.jikexueyuan.com/home/201502/04/d12f/54d1c99185f23.png" alt="phpbase" title="PHP 基础" style="margin-left: 85px">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul class="cf">
+                <li>
+                    <div class="lessonimg-box">
+                        <a href="#" target="_blank" >
+                            <img src="http://a1.jikexueyuan.com/home/201601/26/857b/56a6da2171c35.jpg" class="lessonimg" title="微信 web 开发者工具详解" alt="微信 web 开发者工具详解">
+                        </a>
+                    </div>
+                    <div class="lesson-infor" style="height: 75px;">
+                        <h2 class="lesson-info-h2"><a href="#" target="_blank">使用 jQuery 实现多种类型的导航条</a></h2>
+                        <p>
+                            本课程主要通过 jQuery 和 CSS3 进行实际应用，实现在网站中常见的多种类型的导航条，学习完这个课程可以轻松的应用 jQuery 和 CSS3 的各种交互特效，以及 jQuery 的动画插件jquery.easing.1.3 的使用。
+                        </p>
+                        <div class="timeandicon">
+                            <div class="cf">
+                                <dl>
+                                    <dd class="mar-b8"><i class="time-icon"></i><em>4课时36分钟</em>
+                                    </dd>
+                                    <dd class="zhongji" style="margin-top: 3px">
+                                        <i class="xinhao-icon"></i><em>中级</em>
+                                    </dd>
+                                </dl>
+                                <em class="learn-number">4611人学习</em>
+                            </div>
+                            <div class="cf">
+                                <div class="lessonicon-box">
+                                    <a href="#">
+                                        <img width="16" src="http://a1.jikexueyuan.com/home/201502/04/d12f/54d1c99185f23.png" alt="phpbase" title="PHP 基础" style="margin-left: 85px">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="lesson-list">
+            <ul class="cf">
+                <li>
+                    <div class="lessonimg-box">
+                        <a href="#" target="_blank" >
+                            <img src="http://a1.jikexueyuan.com/home/201601/20/b856/569eeab4307dd.jpg" class="lessonimg" title="微信 web 开发者工具详解" alt="微信 web 开发者工具详解">
+                        </a>
+                    </div>
+                    <div class="lesson-infor" style="height: 75px;">
+                        <h2 class="lesson-info-h2"><a href="#" target="_blank">微信 web 开发者工具详解</a></h2>
+                        <p>
+                            本课程讲解微信 web 开发者工具的产生背景、所解决的问题、使用的场景以及通过实例为大家详细阐述微信 web 开发者工具的具体使用方法，让大家掌握、熟练运用该工具，方便今后的微信开发。
+                        </p>
+                        <div class="timeandicon">
+                            <div class="cf">
+                                <dl>
+                                    <dd class="mar-b8"><i class="time-icon"></i><em>4课时36分钟</em>
+                                    </dd>
+                                    <dd class="zhongji" style="margin-top: 3px">
+                                        <i class="xinhao-icon"></i><em>中级</em>
+                                    </dd>
+                                </dl>
+                                <em class="learn-number">4611人学习</em>
+                            </div>
+                            <div class="cf">
+                                <div class="lessonicon-box">
+                                    <a href="#">
+                                        <img width="16" src="http://a1.jikexueyuan.com/home/201502/04/d12f/54d1c99185f23.png" alt="phpbase" title="PHP 基础" style="margin-left: 85px">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul class="cf">
+                <li>
+                    <div class="lessonimg-box">
+                        <a href="#" target="_blank" >
+                            <img src="http://a1.jikexueyuan.com/home/201601/26/857b/56a6da2171c35.jpg" class="lessonimg" title="微信 web 开发者工具详解" alt="微信 web 开发者工具详解">
+                        </a>
+                    </div>
+                    <div class="lesson-infor" style="height: 75px;">
+                        <h2 class="lesson-info-h2"><a href="#" target="_blank">使用 jQuery 实现多种类型的导航条</a></h2>
+                        <p>
+                            本课程主要通过 jQuery 和 CSS3 进行实际应用，实现在网站中常见的多种类型的导航条，学习完这个课程可以轻松的应用 jQuery 和 CSS3 的各种交互特效，以及 jQuery 的动画插件jquery.easing.1.3 的使用。
+                        </p>
+                        <div class="timeandicon">
+                            <div class="cf">
+                                <dl>
+                                    <dd class="mar-b8"><i class="time-icon"></i><em>4课时36分钟</em>
+                                    </dd>
+                                    <dd class="zhongji" style="margin-top: 3px">
+                                        <i class="xinhao-icon"></i><em>中级</em>
+                                    </dd>
+                                </dl>
+                                <em class="learn-number">4611人学习</em>
+                            </div>
+                            <div class="cf">
+                                <div class="lessonicon-box">
+                                    <a href="#">
+                                        <img width="16" src="http://a1.jikexueyuan.com/home/201502/04/d12f/54d1c99185f23.png" alt="phpbase" title="PHP 基础" style="margin-left: 85px">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul class="cf">
+                <li>
+                    <div class="lessonimg-box">
+                        <a href="#" target="_blank" >
+                            <img src="http://a1.jikexueyuan.com/home/201601/20/b856/569eeab4307dd.jpg" class="lessonimg" title="微信 web 开发者工具详解" alt="微信 web 开发者工具详解">
+                        </a>
+                    </div>
+                    <div class="lesson-infor" style="height: 75px;">
+                        <h2 class="lesson-info-h2"><a href="#" target="_blank">微信 web 开发者工具详解</a></h2>
+                        <p>
+                            本课程讲解微信 web 开发者工具的产生背景、所解决的问题、使用的场景以及通过实例为大家详细阐述微信 web 开发者工具的具体使用方法，让大家掌握、熟练运用该工具，方便今后的微信开发。
+                        </p>
+                        <div class="timeandicon">
+                            <div class="cf">
+                                <dl>
+                                    <dd class="mar-b8"><i class="time-icon"></i><em>4课时36分钟</em>
+                                    </dd>
+                                    <dd class="zhongji" style="margin-top: 3px">
+                                        <i class="xinhao-icon"></i><em>中级</em>
+                                    </dd>
+                                </dl>
+                                <em class="learn-number">4611人学习</em>
+                            </div>
+                            <div class="cf">
+                                <div class="lessonicon-box">
+                                    <a href="#">
+                                        <img width="16" src="http://a1.jikexueyuan.com/home/201502/04/d12f/54d1c99185f23.png" alt="phpbase" title="PHP 基础" style="margin-left: 85px">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="lesson-list">
+            <ul class="cf">
+                <li>
+                    <div class="lessonimg-box">
+                        <a href="#" target="_blank" >
+                            <img src="http://a1.jikexueyuan.com/home/201601/20/b856/569eeab4307dd.jpg" class="lessonimg" title="微信 web 开发者工具详解" alt="微信 web 开发者工具详解">
+                        </a>
+                    </div>
+                    <div class="lesson-infor" style="height: 75px;">
+                        <h2 class="lesson-info-h2"><a href="#" target="_blank">微信 web 开发者工具详解</a></h2>
+                        <p>
+                            本课程讲解微信 web 开发者工具的产生背景、所解决的问题、使用的场景以及通过实例为大家详细阐述微信 web 开发者工具的具体使用方法，让大家掌握、熟练运用该工具，方便今后的微信开发。
+                        </p>
+                        <div class="timeandicon">
+                            <div class="cf">
+                                <dl>
+                                    <dd class="mar-b8"><i class="time-icon"></i><em>4课时36分钟</em>
+                                    </dd>
+                                    <dd class="zhongji" style="margin-top: 3px">
+                                        <i class="xinhao-icon"></i><em>中级</em>
+                                    </dd>
+                                </dl>
+                                <em class="learn-number">4611人学习</em>
+                            </div>
+                            <div class="cf">
+                                <div class="lessonicon-box">
+                                    <a href="#">
+                                        <img width="16" src="http://a1.jikexueyuan.com/home/201502/04/d12f/54d1c99185f23.png" alt="phpbase" title="PHP 基础" style="margin-left: 85px">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul class="cf">
+                <li>
+                    <div class="lessonimg-box">
+                        <a href="#" target="_blank" >
+                            <img src="http://a1.jikexueyuan.com/home/201601/26/857b/56a6da2171c35.jpg" class="lessonimg" title="微信 web 开发者工具详解" alt="微信 web 开发者工具详解">
+                        </a>
+                    </div>
+                    <div class="lesson-infor" style="height: 75px;">
+                        <h2 class="lesson-info-h2"><a href="#" target="_blank">使用 jQuery 实现多种类型的导航条</a></h2>
+                        <p>
+                            本课程主要通过 jQuery 和 CSS3 进行实际应用，实现在网站中常见的多种类型的导航条，学习完这个课程可以轻松的应用 jQuery 和 CSS3 的各种交互特效，以及 jQuery 的动画插件jquery.easing.1.3 的使用。
+                        </p>
+                        <div class="timeandicon">
+                            <div class="cf">
+                                <dl>
+                                    <dd class="mar-b8"><i class="time-icon"></i><em>4课时36分钟</em>
+                                    </dd>
+                                    <dd class="zhongji" style="margin-top: 3px">
+                                        <i class="xinhao-icon"></i><em>中级</em>
+                                    </dd>
+                                </dl>
+                                <em class="learn-number">4611人学习</em>
+                            </div>
+                            <div class="cf">
+                                <div class="lessonicon-box">
+                                    <a href="#">
+                                        <img width="16" src="http://a1.jikexueyuan.com/home/201502/04/d12f/54d1c99185f23.png" alt="phpbase" title="PHP 基础" style="margin-left: 85px">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul class="cf">
+                <li>
+                    <div class="lessonimg-box">
+                        <a href="#" target="_blank" >
+                            <img src="http://a1.jikexueyuan.com/home/201601/20/b856/569eeab4307dd.jpg" class="lessonimg" title="微信 web 开发者工具详解" alt="微信 web 开发者工具详解">
+                        </a>
+                    </div>
+                    <div class="lesson-infor" style="height: 75px;">
+                        <h2 class="lesson-info-h2"><a href="#" target="_blank">微信 web 开发者工具详解</a></h2>
+                        <p>
+                            本课程讲解微信 web 开发者工具的产生背景、所解决的问题、使用的场景以及通过实例为大家详细阐述微信 web 开发者工具的具体使用方法，让大家掌握、熟练运用该工具，方便今后的微信开发。
+                        </p>
+                        <div class="timeandicon">
+                            <div class="cf">
+                                <dl>
+                                    <dd class="mar-b8"><i class="time-icon"></i><em>4课时36分钟</em>
+                                    </dd>
+                                    <dd class="zhongji" style="margin-top: 3px">
+                                        <i class="xinhao-icon"></i><em>中级</em>
+                                    </dd>
+                                </dl>
+                                <em class="learn-number">4611人学习</em>
+                            </div>
+                            <div class="cf">
+                                <div class="lessonicon-box">
+                                    <a href="#">
+                                        <img width="16" src="http://a1.jikexueyuan.com/home/201502/04/d12f/54d1c99185f23.png" alt="phpbase" title="PHP 基础" style="margin-left: 85px">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul class="cf">
+                <li>
+                    <div class="lessonimg-box">
+                        <a href="#" target="_blank" >
+                            <img src="http://a1.jikexueyuan.com/home/201601/26/857b/56a6da2171c35.jpg" class="lessonimg" title="微信 web 开发者工具详解" alt="微信 web 开发者工具详解">
+                        </a>
+                    </div>
+                    <div class="lesson-infor" style="height: 75px;">
+                        <h2 class="lesson-info-h2"><a href="#" target="_blank">使用 jQuery 实现多种类型的导航条</a></h2>
+                        <p>
+                            本课程主要通过 jQuery 和 CSS3 进行实际应用，实现在网站中常见的多种类型的导航条，学习完这个课程可以轻松的应用 jQuery 和 CSS3 的各种交互特效，以及 jQuery 的动画插件jquery.easing.1.3 的使用。
+                        </p>
+                        <div class="timeandicon">
+                            <div class="cf">
+                                <dl>
+                                    <dd class="mar-b8"><i class="time-icon"></i><em>4课时36分钟</em>
+                                    </dd>
+                                    <dd class="zhongji" style="margin-top: 3px">
+                                        <i class="xinhao-icon"></i><em>中级</em>
+                                    </dd>
+                                </dl>
+                                <em class="learn-number">4611人学习</em>
+                            </div>
+                            <div class="cf">
+                                <div class="lessonicon-box">
+                                    <a href="#">
+                                        <img width="16" src="http://a1.jikexueyuan.com/home/201502/04/d12f/54d1c99185f23.png" alt="phpbase" title="PHP 基础" style="margin-left: 85px">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="lesson-list">
+            <ul class="cf">
+                <li>
+                    <div class="lessonimg-box">
+                        <a href="#" target="_blank" >
+                            <img src="http://a1.jikexueyuan.com/home/201601/20/b856/569eeab4307dd.jpg" class="lessonimg" title="微信 web 开发者工具详解" alt="微信 web 开发者工具详解">
+                        </a>
+                    </div>
+                    <div class="lesson-infor" style="height: 75px;">
+                        <h2 class="lesson-info-h2"><a href="#" target="_blank">微信 web 开发者工具详解</a></h2>
+                        <p>
+                            本课程讲解微信 web 开发者工具的产生背景、所解决的问题、使用的场景以及通过实例为大家详细阐述微信 web 开发者工具的具体使用方法，让大家掌握、熟练运用该工具，方便今后的微信开发。
+                        </p>
+                        <div class="timeandicon">
+                            <div class="cf">
+                                <dl>
+                                    <dd class="mar-b8"><i class="time-icon"></i><em>4课时36分钟</em>
+                                    </dd>
+                                    <dd class="zhongji" style="margin-top: 3px">
+                                        <i class="xinhao-icon"></i><em>中级</em>
+                                    </dd>
+                                </dl>
+                                <em class="learn-number">4611人学习</em>
+                            </div>
+                            <div class="cf">
+                                <div class="lessonicon-box">
+                                    <a href="#">
+                                        <img width="16" src="http://a1.jikexueyuan.com/home/201502/04/d12f/54d1c99185f23.png" alt="phpbase" title="PHP 基础" style="margin-left: 85px">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul class="cf">
+                <li>
+                    <div class="lessonimg-box">
+                        <a href="#" target="_blank" >
+                            <img src="http://a1.jikexueyuan.com/home/201601/26/857b/56a6da2171c35.jpg" class="lessonimg" title="微信 web 开发者工具详解" alt="微信 web 开发者工具详解">
+                        </a>
+                    </div>
+                    <div class="lesson-infor" style="height: 75px;">
+                        <h2 class="lesson-info-h2"><a href="#" target="_blank">使用 jQuery 实现多种类型的导航条</a></h2>
+                        <p>
+                            本课程主要通过 jQuery 和 CSS3 进行实际应用，实现在网站中常见的多种类型的导航条，学习完这个课程可以轻松的应用 jQuery 和 CSS3 的各种交互特效，以及 jQuery 的动画插件jquery.easing.1.3 的使用。
+                        </p>
+                        <div class="timeandicon">
+                            <div class="cf">
+                                <dl>
+                                    <dd class="mar-b8"><i class="time-icon"></i><em>4课时36分钟</em>
+                                    </dd>
+                                    <dd class="zhongji" style="margin-top: 3px">
+                                        <i class="xinhao-icon"></i><em>中级</em>
+                                    </dd>
+                                </dl>
+                                <em class="learn-number">4611人学习</em>
+                            </div>
+                            <div class="cf">
+                                <div class="lessonicon-box">
+                                    <a href="#">
+                                        <img width="16" src="http://a1.jikexueyuan.com/home/201502/04/d12f/54d1c99185f23.png" alt="phpbase" title="PHP 基础" style="margin-left: 85px">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul class="cf">
+                <li>
+                    <div class="lessonimg-box">
+                        <a href="#" target="_blank" >
+                            <img src="http://a1.jikexueyuan.com/home/201601/20/b856/569eeab4307dd.jpg" class="lessonimg" title="微信 web 开发者工具详解" alt="微信 web 开发者工具详解">
+                        </a>
+                    </div>
+                    <div class="lesson-infor" style="height: 75px;">
+                        <h2 class="lesson-info-h2"><a href="#" target="_blank">微信 web 开发者工具详解</a></h2>
+                        <p>
+                            本课程讲解微信 web 开发者工具的产生背景、所解决的问题、使用的场景以及通过实例为大家详细阐述微信 web 开发者工具的具体使用方法，让大家掌握、熟练运用该工具，方便今后的微信开发。
+                        </p>
+                        <div class="timeandicon">
+                            <div class="cf">
+                                <dl>
+                                    <dd class="mar-b8"><i class="time-icon"></i><em>4课时36分钟</em>
+                                    </dd>
+                                    <dd class="zhongji" style="margin-top: 3px">
+                                        <i class="xinhao-icon"></i><em>中级</em>
+                                    </dd>
+                                </dl>
+                                <em class="learn-number">4611人学习</em>
+                            </div>
+                            <div class="cf">
+                                <div class="lessonicon-box">
+                                    <a href="#">
+                                        <img width="16" src="http://a1.jikexueyuan.com/home/201502/04/d12f/54d1c99185f23.png" alt="phpbase" title="PHP 基础" style="margin-left: 85px">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--职业路径图-->
+    <div class="occupation-path"></div>
+
+    <!--知识体系图-->
+    <div class="knowledge-frame">
+        <div class="index-public-title cf">
+            <strong><a href="/path/">知识体系图</a></strong><i class="way">?</i>
+            <a href="http://www.jikexueyuan.com/path/" class="more-lesson" target="_blank">更多&gt;&gt;</a>
+        </div>
+        <div class="mapbox cf">
+            <div class="mapbox-1200">
+                <div class="card-transform">
+                    <a href="#" class="flipper" target="_blank">
+                        <div class="front">
+                            <img src="http://wirrorcdn.jikexueyuan.com/picture/android.png" alt="Android" width="52">
+                            <h2>Android</h2>
+                            <span>90门课程</span>
+                        </div>
+                        <div class="back"><strong>815649人已学习</strong><!--<span></span>-->
+                            <button class="greenbtn">立即学习</button>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-transform">
+                    <a href="#" class="flipper" target="_blank">
+                        <div class="front">
+                            <img src="http://wirrorcdn.jikexueyuan.com/picture/html.png" alt="HTML5开发" width="52">
+                            <h2>HTML5开发</h2>
+                            <span>116门课程</span>
+                        </div>
+                        <div class="back"><strong>1933517人已学习</strong><!--<span></span>-->
+                            <button class="greenbtn">立即学习</button>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-transform">
+                    <a href="#" class="flipper" target="_blank">
+                        <div class="front">
+                            <img src="http://wirrorcdn.jikexueyuan.com/picture/Java.png" alt="Java语言" width="52">
+                            <h2>Java语言</h2>
+                            <span>45门课程</span>
+                        </div>
+                        <div class="back"><strong>721912人已学习</strong><!--<span></span>-->
+                            <button class="greenbtn">立即学习</button>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-transform">
+                    <a href="#" class="flipper" target="_blank">
+                        <div class="front">
+                            <img src="http://wirrorcdn.jikexueyuan.com/picture/php.png" alt="PHP语言" width="52">
+                            <h2>PHP语言</h2>
+                            <span>23门课程</span>
+                        </div>
+                        <div class="back"><strong>285328人已学习</strong><!--<span></span>-->
+                            <button class="greenbtn">立即学习</button>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-transform">
+                    <a href="#" class="flipper" target="_blank">
+                        <div class="front">
+                            <img src="http://wirrorcdn.jikexueyuan.com/picture/php.png" alt="PHP语言" width="52">
+                            <h2>PHP语言</h2>
+                            <span>23门课程</span>
+                        </div>
+                        <div class="back"><strong>285328人已学习</strong><!--<span></span>-->
+                            <button class="greenbtn">立即学习</button>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-transform">
+                    <a href="#" class="flipper" target="_blank">
+                        <div class="front">
+                            <img src="http://wirrorcdn.jikexueyuan.com/picture/php.png" alt="PHP语言" width="52">
+                            <h2>PHP语言</h2>
+                            <span>23门课程</span>
+                        </div>
+                        <div class="back"><strong>285328人已学习</strong><!--<span></span>-->
+                            <button class="greenbtn">立即学习</button>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--精品课堂-->
+    <div class="best-lessons"></div>
+
+    <!--wiki-->
+    <div class="wiki"></div>
+</div>
+
+<!--底部信息-->
+<footer></footer>
+<script src="js/sea.js"></script>
+<script>
+    seajs.config({
+        base: "./js/",
+        alias: {
+            "jquery": "jquery.js",
+            "addons": "addons.js"
+        }
+    });
+    // 加载入口模块
+    seajs.use("./js/app");
+</script>
+<script src="js/jquery.min.js"></script>
+<script src="js/addons.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

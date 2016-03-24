@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: #eeeeee;
+}
+ul, li{
+  list-style: none;
+}
+
+@boardWidth: 600px;
+@boardHeight: 400px;
+@boardColor: #026102;
+
+.setSize(@width, @height) {
+  width: @width;
+  height: @height;
+}
+.setFont(@size, @text){
+  font-size: @size;
+  text-align: @text;
+}
+
+.container {
+  .setSize(@boardWidth, @boardHeight + 20);
+  background-color: white;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -(@boardWidth / 2);
+  margin-top: -(@boardHeight / 2);
+  .left {
+    .setSize((@boardWidth * 0.4), (@boardHeight * 0.4));
+    float: left;
+    .busId{
+      .setSize((@boardWidth * 0.4), (@boardHeight * 0.4 * 0.8));
+      background-color: red;
+      color: white;
+      .setFont(600%, center);
+      line-height: (@boardHeight * 0.4 * 0.8);
+    }
+    .busTime{
+      .setFont(120%, center);
+    }
+  }
+  .right {
+    .setSize((@boardWidth * 0.59), (@boardHeight * 0.4));
+    float: left;
+    .stationRange{
+      .setSize((@boardWidth * 0.59), (@boardHeight * 0.4 * 0.4));
+      .setFont(250%, center);
+      margin-top: 5px;
+    }
+    .stationName{
+      .setSize((@boardWidth * 0.59), (@boardHeight * 0.4 * 0.6));
+      .setFont(350%, center);
+      color: red;
+    }
+  }
+  .content{
+    .setSize((@boardWidth - 20), (@boardHeight * 0.55));
+    margin-top: (@boardHeight * 0.38);
+    background-color: @boardColor;
+    padding: 5px 10px;
+    li{
+      //width: (@boardWidth * 0.08);
+      .setSize((@boardWidth * 0.08), (@boardHeight * 0.53));
+      color: white;
+      .setFont(200%, center);
+      display: inline-block;
+      line-height: (@boardHeight * 0.5 * 0.33);
+      margin: 0 3px;
+    }
+  }
+  .footer{
+    .price{
+      .setSize((@boardWidth * 0.9), 20px);
+      .setFont(18px, center);
+      margin-left: 10px;
+      margin-top: 8px;
+      border-bottom: 2px solid red;
+      float: left;
+    }
+    .triangle{
+      .setSize(0, 0);
+      border-bottom: 10px solid red;
+      border-right: 35px solid transparent;
+      float: left;
+      margin-top: 20px;
+    }
+  }
+}

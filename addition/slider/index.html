@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    .banner {
+        margin: 100px auto;
+        border: 5px solid #000;
+        width: 550px;
+        height: 300px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .banner .img {
+        width: 5000px;
+        position: absolute;
+        left: 0;
+        top: 0
+    }
+
+    .banner .img li {
+        float: left;
+    }
+
+    .banner .num {
+        position: absolute;
+        width: 100%;
+        bottom: 10px;
+        left: 0;
+        text-align: center;
+        /*父级设置font－size为0，里面的margin缩小*/
+        font-size: 0;
+    }
+
+    .banner .num li {
+        width: 10px;
+        height: 10px;
+        background: #888;
+        border-radius: 50%;
+        display: inline-block;
+        margin: 0 3px;
+        cursor: pointer;
+    }
+
+    .banner .num li.on {
+        background: #F60;
+    }
+
+    .banner .btn {
+        width: 30px;
+        height: 50px;
+        background: rgba(0, 0, 0, .5);
+        position: absolute;
+        top: 50%;
+        margin-top: -25px;
+        cursor: pointer;
+        text-align: center;
+        line-height: 50px;
+        color: #fff;
+        font-size: 40px;
+    }
+
+    .banner .btn_l {
+        left: 0;
+    }
+
+    .banner .btn_r {
+        right: 0;
+    }
+
+</style>
+<body>
+<div class="banner">
+    <ul class="img">
+        <li><a href="#"><img src="images/1.jpg"></a></li>
+        <li><a href="#"><img src="images/2.jpg"></a></li>
+        <li><a href="#"><img src="images/3.jpg"></a></li>
+        <li><a href="#"><img src="images/4.jpg"></a></li>
+    </ul>
+
+    <ul class="num"></ul>
+
+    <div class="btn btn_l">&lt;</div>
+    <div class="btn btn_r">&gt;</div>
+</div>
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript">
+    $(function () {
+        var i = 0;
+        var clone = $('.banner .img li').first().clone();
+        $('.banner .img').append(clone);
+        var size = $(".banner .img li").size();
+
+        for (var j = 0; j < size - 1; j++) {
+            $(".banner .num").append("<li></li>>");
+        }
+
+        $('.banner .num li').first().addClass('on');
+
+        //鼠标滑入原点
+        $(".banner .num li").hover(function () {
+            var index = $(this).index();
+            i = index;
+            $('.banner .img').stop().animate({
+                left: -index * 550
+            }, 500);
+            $(this).addClass('on').siblings().removeClass('on');
+
+        });
+
+        //自动轮播
+        var t = setInterval(moveL, 2000);
+
+        $(".banner").hover(function () {
+            clearInterval(t);
+        }, function () {
+            t = setInterval(moveL, 2000);
+        });
+
+
+
+
+        function moveL() {
+            i++;
+            if (i == size) {
+                $('.banner .img').css({left: 0});
+                i = 1;
+            }
+            $('.banner .img').stop().animate({
+                left: -i * 550
+            }, 500);
+            if (i == size - 1) {
+                $('.banner .num li').eq(0).addClass('on').siblings().removeClass('on');
+            } else {
+                //siblings同辈其他元素
+                $('.banner .num li').eq(i).addClass('on').siblings().removeClass('on');
+            }
+        }
+
+        $('.banner .btn_l').click(function () {
+            moveL();
+        });
+
+        function moveR() {
+            i--;
+            if (i == -1) {
+                $('.banner .img').css({left: -(size - 1) * 550});
+                i = size - 2;
+            }
+            $('.banner .img').stop().animate({
+                left: -i * 550
+            }, 500);
+            $('.banner .num li').eq(i).addClass('on').siblings().removeClass('on');
+        }
+
+
+        $('.banner .btn_r').click(function () {
+            moveR();
+        });
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>双飞翼布局</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            background-color: aquamarine;
+            text-align: center;
+            height: 100px;
+            line-height: 100px;
+        }
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            height: 50px;
+            line-height: 50px;
+        }
+        article{
+            background-color: gray;
+            height: 300px;
+            text-align: center;
+            overflow: hidden;
+        }
+        .middle{
+            background-color: #3385ff;
+            float: left;
+            width: 100%;
+            /*height: 100%;*/
+        }
+        .middle .inner{
+            background-color: white;
+            margin: 0 100px 0 150px;
+        }
+        .left{
+            background-color: yellow;
+            float: left;
+            width: 150px;
+            margin-left: -100%;
+            /*height: 100%;*/
+            padding-bottom: 9999px;
+            margin-bottom: -9999px;
+        }
+        .right{
+            background-color: orange;
+            float: left;
+            width: 100px;
+            margin-left: -100px;
+            /*height: 100%;*/
+            padding-bottom: 9999px;
+            margin-bottom: -9999px;
+        }
+    </style>
+</head>
+<body>
+<header>我是脑袋</header>
+<article>
+    <!--middle是主体，放在第一个渲染-->
+    <div class="middle">
+        <!--加入inner更灵活-->
+        <div class="inner">我是中间</div>
+    </div>
+    <div class="left">我是左边</div>
+    <div class="right">我是右边</div>
+</article>
+<footer>我是尾巴</footer>
+</body>
+</html>

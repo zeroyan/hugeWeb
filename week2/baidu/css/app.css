@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    text-align: center;
+    /*width: 100%;*/
+}
+
+/*导航栏*/
+.nav{
+    text-align: left;
+    border-bottom: solid 2px #ebebeb;
+}
+.nav>div{
+    display: inline-table;
+    height: 32px;
+}
+.nav>div>a{
+    display: inline;
+    padding: 0 10px;
+    font-size: 14px;
+    line-height: 32px;
+    text-decoration: underline;
+    color: #333;
+}
+
+.nav>div>a:hover{
+    color: #00c;
+}
+.nav-left{
+    padding-left: 10px;
+}
+.nav-right{
+    width: 483px;
+    float: right;
+    font-weight: bold;
+}
+.nav-more{
+    background: #3385ff;
+    text-decoration: none !important;
+    color: #ffffff !important;
+    padding: 10px 10px !important;
+}
+
+/*中间百度一下*/
+.context{
+    width: 650px;
+    margin: 50px auto;
+}
+.context-logo{
+    width: 270px;
+    height: auto;
+}
+/*.context-form{*/
+    /*position: relative;*/
+    /*display: -webkit-flex;*/
+    /*padding: 0 5px;*/
+/*}*/
+.context>form{
+    position: relative;
+}
+.context>form>input[type=text]{
+    width: 536px;
+    height: 36px;
+    float: left;
+    /*-webkit-flex: 5;*/
+}
+.context>form>input[type=submit]{
+    /*margin-left: -35px;*/
+    width: 102px;
+    height: 40px;
+    color: #ffffff;
+    background: #3385ff;
+    font-size: 16px;
+    border: 0;
+    float: left;
+    /*-webkit-flex: 1;*/
+}
+.context>form>img{
+    position: absolute;
+    top: 5px;
+    left: 500px;
+    width: 30px;
+    float: left;
+}
+.context>form>img:hover{
+    cursor: pointer;
+}
+
+/*底部信息css*/
+.footer{
+    width: 600px;
+    /*margin-top: 200px;*/
+    font-size: 13px;
+    color: #999;
+    margin: 200px auto 0 auto;
+    /*white-space: nowrap;*/
+    /*overflow: scroll;*/
+
+}
+.footer>span{
+    margin-right: 5px;
+}
+.footer a{
+    text-decoration: none;
+    color: #999;
+}
+.footer a:hover{
+    text-decoration: underline;
+}
+
+
+/*响应式*/
+@media screen and (max-width: 798px){
+    .nav-left{
+        display: none !important;
+    }
+}
+@media screen and (max-width: 480px){
+    .nav-right{
+        /*display: none !important;*/
+        clear: both;
+        margin: auto auto;
+    }
+    .context>form>img{
+        display: none;
+    }
+}

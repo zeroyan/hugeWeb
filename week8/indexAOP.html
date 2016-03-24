@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+</body>
+
+
+
+<script>
+    function test(){
+        console.log(2);
+    }
+    Function.prototype.before = function(fn){
+        var _this = this;
+        console.log(arguments);
+        fn();
+        _this.apply(_this,arguments);
+    };
+    test.before(function(){
+        console.log(1);
+    });
+
+</script>
+</html>

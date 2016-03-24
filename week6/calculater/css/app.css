@@ -1,0 +1,101 @@
+body,ul{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #E6E6E6;
+}
+/*外围轮廓*/
+.calBox{
+    width: 460px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -230px;
+    margin-top: -225px;
+    box-shadow: 0px 0px 10px rgba(153,153,153,0.8),0px 0px 1px rgba(0,0,0,0.5) inset;
+    -webkit-box-shadow: 0px 0px 10px rgba(153,153,153,0.8),0px 0px 1px rgba(0,0,0,0.5) inset;
+    background: #F9F9F9;
+    overflow: hidden
+}
+#text{
+    display: block;
+    width:418px;
+    height:80px;
+    margin:10px 0;
+    border-radius:5px;
+    border:1px solid #64655F;
+    box-shadow: 0px 5px 2px rgba(157,157,145,0.8) inset;
+    -webkit-box-shadow:0px 5px 2px rgba(157,157,145,0.8) inset;
+    outline:none;
+    background:#FCFDEB;
+    text-align:right;
+    font-family:"微软雅黑";
+    font-size:40px;
+    padding:0px 10px;
+}
+.cal{
+    padding: 0px 10px;
+    width:440px;
+}
+.calNum{
+    width: 60%;
+}
+.calOpe{
+    width: 40%;
+}
+/*.cal>div{*/
+    /*background-color: #009cda;*/
+/*}*/
+.calOpe>div{
+    width: 50%;
+}
+/*各种按钮*/
+button{
+    float: left;
+    width: 80px;
+    height: 45px;
+    outline:none;
+    border-radius: 5px;
+    border: 1px;
+    margin: 5px 4px;
+    font-size: 16px;
+}
+button:active{
+    background-color: #6B6B6B;
+}
+#equal{
+    height: 100px;
+}
+.zero{
+    width: 168px;
+}
+/*公共样式*/
+.fr{
+    float: right;
+}
+.fl{
+    float: left;
+}
+.orange{
+    background-color: #D5753B;
+    color: #FFFFFF;
+}
+.orange:active{
+    background-color: #9C4A18;
+}
+.black{
+    background-color: #363636;
+    color: #FFFFFF;
+}
+.black:active{
+    background-color: #000000;
+}
+.silvery{
+    background-color: #92979D;
+}
+.silvery:active{
+    background-color: #7E8388;
+}

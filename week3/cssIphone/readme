@@ -1,0 +1,24 @@
+第三周作业——纯css3画iphone
+实际操作起来不是那么简单，不过做下来后还是能深入了解css3的，有一些问题：
+1. background的颜色渐变老师能否简单介绍下，我这种是线性的，能不能随意改变颜色渐变？
+2. 背景图片充满区域(.iphone-screen)，我这样写可否行？
+3. 我往屏幕里加字(nav中)但字体大小我想缩的更小更细，该怎么办？
+4. 文字渐变光动画怎么做(slide to unlock)？以下是baidu的代码，没太看懂
+    @media all and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm) {
+        .masked{
+            background-image: -webkit-linear-gradient(left, #147B96, #E6D205 25%, #147B96 50%, #E6D205 75%, #147B96);
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+            -webkit-background-size: 200% 100%;
+            -webkit-animation: masked-animation 4s infinite linear;
+        }
+    }
+    @-webkit-keyframes masked-animation {
+        0%  { background-position: 0 0;}
+        100% { background-position: -100% 0;}
+    }
+问题略多，老师看您时间简单讲解吧哈，太复杂就不用讲了～
+
+修改：
+1.换掉背景图片，使用动画，尽量美观。
+2.不足：对于transform运用就几处地方，应用border来画三角形也不多。

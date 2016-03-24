@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>百度新闻</title>
+    <link rel="stylesheet" href="/stylesheets/amazeui.min.css">
+    <link rel="stylesheet" href="/stylesheets/app.css">
+</head>
+<body>
+<!--头部＋导航-->
+<header class="am-topbar am-topbar-inverse app-header-box">
+    <div class="app-header">
+        <div class="middle">
+            <div class="inner">
+                <a href="/">
+                    <div class="title"></div>
+                </a>
+            </div>
+        </div>
+        <div class="left">
+            <div class="baidu-logo"></div>
+            <div class="baidu-user"></div>
+        </div>
+        <div class="right">
+            <div class="baidu-search"></div>
+            <div class="baidu-more"></div>
+        </div>
+    </div>
+    <ul class="am-nav am-nav-pills app-cate">
+        <li><a href="#" data-cate="bj">百家</a></li>
+        <li><a href="#" data-cate="bd">本地</a></li>
+        <li><a href="#" data-cate="tp">图片</a></li>
+        <li><a href="#" data-cate="yl">娱乐</a></li>
+        <li><a href="#" data-cate="sh">社会</a></li>
+    </ul>
+</header>
+
+<!--内容-->
+<article>
+    <div class="loading">
+        <i class="am-icon-spinner am-icon-spin"></i>
+    </div>
+    <div class="content">
+        <div data-am-widget="slider" class="am-slider am-slider-a5" data-am-slider='{"directionNav":false}'>
+            <ul class="am-slides app-slides">
+                <% for(var i = 0; i < 4; i++){ %>
+                <li><img src=<%= newsList[i]['imgUrl'] %>></li>
+                <% } %>
+                <!-- <li>
+                    <img src="http://s.amazeui.org/media/i/demos/bing-1.jpg">
+                </li>
+                <li>
+                    <img src="http://s.amazeui.org/media/i/demos/bing-4.jpg">
+                </li> -->
+            </ul>
+        </div>
+        <div class="app-newsList">
+            <div data-am-widget="list_news" class="am-list-news am-list-news-default">
+                <div class="am-list-news-bd">
+                    <ul class="am-list">
+                        <% for(var i = 4; i < newsList.length; i++){ %>
+                        <% if(newsList[i]['imgUrl'] == '') { %>
+                        <li class="am-g am-list-item-desced" data-index="5">
+                            <div class="am-list-main">
+                                <h3 class="am-list-item-hd"><a href="#"><%= newsList[i]['title'] %></a></h3>
+
+                                <div class="am-list-item-text"><%= newsList[i]['description'] %></div>
+                            </div>
+                        </li>
+                        <% }else{ %>
+                        <li class="am-g am-list-item-desced am-list-item-thumbed am-list-item-thumb-left"
+                            data-index="4">
+                            <div class="am-u-sm-4 am-list-thumb">
+                                <a href="#"><img src=<%= newsList[i]['imgUrl'] %>></a>
+                            </div>
+                            <div class="am-u-sm-8 am-list-main">
+                                <h3 class="am-list-item-hd"><a href="#"><%= newsList[i]['title'] %></a></h3>
+
+                                <div class="am-list-item-text">
+                                    <%= newsList[i]['description'] %>
+                                </div>
+                            </div>
+                        </li>
+                        <% } %>
+                        <% } %>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</article>
+
+<div data-am-widget="gotop" class="am-gotop am-gotop-default app-goTop">
+    <a href="#top" title="回到顶部">
+        <span class="am-gotop-title">回到顶部</span>
+    </a>
+</div>
+
+<script src="/javascripts/jquery.min.js"></script>
+<script src="/javascripts/amazeui.min.js"></script>
+<script src="/javascripts/app.js"></script>
+</body>
+</html>

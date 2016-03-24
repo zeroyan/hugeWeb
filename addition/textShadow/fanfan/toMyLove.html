@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<style>
+    html {
+        cursor: none;
+    }
+
+    body {
+        background-color: #000;
+        margin: 0;
+        padding: 0;
+    }
+
+    .love-u {
+        width: 398px;
+        height: 88px;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        background-color: #666;
+        position: absolute;
+        overflow: hidden;
+        cursor: none;
+    }
+
+    .love-u .wanna-say {
+        margin: 0;
+        color: #999;
+        font-size: 40px;
+        font-weight: bold;
+        line-height: 40px;
+        text-align: center;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 25px;
+        text-shadow: 0px -20px 2px #000;
+    }
+
+    .love-u .light {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: #000000;
+        z-index: 1;
+    }
+
+    .love-u:hover .light {
+        background: url(light.png) center center;
+    }
+</style>
+<body>
+<div class="love-u">
+    <p class="wanna-say">周岩喜欢范雅彬</p>
+
+    <div class="light"></div>
+</div>
+
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript">
+    $('.love-u').on('mousemove', function (event) {
+        var x = event.offsetX - 400 / 2 + 10;
+        var y = event.offsetY - 88 / 2 - 20;
+        $('.wanna-say').css({
+            'text-shadow': -x + 'px ' + -y + 'px 2px #000'
+        });
+        var _x = event.offsetX + 1200 / 2;
+        var _y = event.offsetY + 900 / 2;
+        $('.light').css({
+            'background-position': _x + 'px ' + _y + 'px'
+        });
+    });
+
+    //打开浏览器，按F12，开发者工具中找console，然后就能看见啦。
+    console.log("%c把源码给你了也许你就能看到这句话了: 要和你一直幸福下去", " text-shadow: 0 1px 0 #ccc,0 2px 0 #c9c9c9,0 3px 0 #bbb,0 4px 0 #b9b9b9,0 5px 0 #aaa,0 6px 1px rgba(0,0,0,.1),0 0 5px rgba(0,0,0,.1),0 1px 3px rgba(0,0,0,.3),0 3px 5px rgba(0,0,0,.2),0 5px 10px rgba(0,0,0,.25),0 10px 10px rgba(0,0,0,.2),0 20px 20px rgba(0,0,0,.15);font-size:2em")
+
+</script>
+</body>
+</html>

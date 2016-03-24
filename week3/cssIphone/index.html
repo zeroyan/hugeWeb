@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>css3模拟iphone界面</title>
+    <link rel="stylesheet" type="text/css" href="iphone.css">
+</head>
+<body>
+<div class="iphone">
+    <div class="iphone-bg"></div>
+    <div class="iphone-power-button"></div>
+    <div class="iphone-voice-toggle"></div>
+    <div class="iphone-voice-plus"></div>
+    <div class="iphone-voice-minus"></div>
+    <div class="iphone-loudspeaker"></div>
+    <div class="iphone-screen">
+        <!--背景动画-->
+        <div class="circle"></div>
+        <!--信号、电量-->
+        <nav>
+            <div class="nav-signal">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="nav-battery">
+                <div><div></div></div>
+                <div></div>
+            </div>
+            <div class="nav-middle"></div>
+        </nav>
+        <!--时间、日期-->
+        <article>
+            <p class="nav-time">00:00</p>
+            <p class="nav-date">Thursday, December 10</p>
+        </article>
+        <!--滑动解锁-->
+        <footer>
+            <div></div>
+            slide to unlock
+        </footer>
+    </div>
+    <div class="iphone-home-button"></div>
+</div>
+
+<script src="controller.js"></script>
+</body>
+</html>

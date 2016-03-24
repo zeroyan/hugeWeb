@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<style>
+    .linear-gradient{
+        width: 1000px;
+        margin:50px auto;
+        text-align: center;
+    }
+    .linear-gradient p {
+        width:100px;
+        height:100px;
+        float: left;
+        border:1px solid #999;
+        line-height: 100px;
+        background-color: #f9f9f9;
+        margin-right: 100px;
+        font-size: 20px;
+    }
+    /*线性渐变
+        起点 起点颜色，中间颜色（跟一个中间开始得位置），终点颜色
+    */
+    .linear-gradient p:first-child{
+        background: -webkit-linear-gradient(top, #09f, #fff 20px, #0c0);
+    }
+    .linear-gradient p:last-child{
+        background: -webkit-linear-gradient(20deg, #09f, #fff 20px, #0c0);
+    }
+</style>
+<body>
+<div class="linear-gradient">
+    <p>普通渐变</p>
+    <p>角度渐变</p>
+</div>
+</body>
+</html>

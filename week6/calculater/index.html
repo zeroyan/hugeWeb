@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>简易计算器</title>
+    <link rel="stylesheet" type="text/css" href="css/app.css">
+</head>
+<body>
+<div class="calBox">
+    <div class="cal">
+        <input type="text" id="text" value="0" disabled="disabled">
+        <!--左边数字-->
+        <div class="calNum fl">
+            <button id="calSwitch" class="orange">ON/OFF</button>
+            <button id="calDel" class="orange">&lt;=</button>
+            <button id="calClearAll" class="orange">清屏</button>
+            <button class="num">7</button>
+            <button class="num">8</button>
+            <button class="num">9</button>
+            <button class="num">4</button>
+            <button class="num">5</button>
+            <button class="num">6</button>
+            <button class="num">1</button>
+            <button class="num">2</button>
+            <button class="num">3</button>
+            <button class="num zero">0</button>
+            <button id="calPoint">.</button>
+
+        </div>
+        <!--右边运算符-->
+        <div class="calOpe fr">
+            <button id="calPosNeg" class="black">+/-</button>
+            <button id="calReciprocal" class="black">1/x</button>
+            <button id="calDivide" class="silvery">/</button>
+            <button id="calModule" class="black">%</button>
+            <button id="calMultiply" class="silvery">*</button>
+            <button id="calSqrt" class="black">√</button>
+            <div class="fl">
+                <button id="calMinus" class="silvery">-</button>
+                <button id="calPlus" class="silvery">+</button>
+            </div>
+            <div class="fr">
+                <button id="equal" class="black">=</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #0D7792;
+}
+.container{
+    background-color: #ffffff;
+    width: 700px;
+    height:350px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    border: solid 1px #cccccc;
+    border-radius: 10px;
+}
+.title{
+    font-size: 18px;
+    font-weight: bold;
+    border-bottom: solid 1px #cccccc;
+    padding: 15px 0;
+}
+.content{
+    padding: 10px;
+}
+.warning{
+    font-size: 12px;
+}
+
+/*用户名密码css*/
+.content-table{
+    margin-top: 5px;
+    border-spacing: 0px;
+}
+.content-table>thead{
+    background-color: #DCDCDC;
+    width: 100%;
+}
+.content-table>thead td{
+    padding:5px;
+    font-size: 13px;
+    font-weight: bold;
+}
+.content-table>tbody{
+    vertical-align: middle;
+}
+/*.content-table>tbody>tr{*/
+    /*/!*padding: 10px 0;*!/*/
+/*}*/
+.content-table>tbody>tr>td{
+    padding: 4px 0;
+}
+.content-table>.tbody1>tr>td:nth-child(1){
+    width: 20%;
+    text-align: right;
+    vertical-align: middle;
+}
+.content-table>.tbody1>tr>td:nth-child(2){
+    width: 30%;
+    text-align: center;
+}
+.content-table>.tbody1>tr>td:nth-child(3){
+    width: 50%;
+    font-size: 13px;
+}
+
+/*身份css*/
+.content-table>.tbody2>tr>td:nth-child(1){
+    width: 20%;
+    text-align: right;
+    vertical-align: middle;
+}
+.content-table>.tbody2>tr>td:nth-child(2){
+    font-size: 13px;
+}
+.content-table>.tbody2>tr>td>p{
+    margin: 5px 0 5px 38px;
+}
+
+/*提交重置css*/
+.content>form>div{
+    /*display: inline-block;*/
+    width: 100%;
+    text-align: center;
+}
+.content>form>div>input{
+    width: 50px;
+    margin: 20px auto;
+}
+
+/*共用css*/
+.center{
+    text-align: center;
+}
+.c-orange{
+    color: #FF6E0E;
+}
+.c-red{
+    color: #ff0000;
+}

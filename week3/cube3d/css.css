@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    text-align: center;
+    margin-top: 10px;
+}
+.cube{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -100px;
+    height: 200px;
+    width: 200px;
+    transform-style: preserve-3d;
+    /*-webkit-transform-style: preserve-3d;*/
+    /*-moz-transform-style: preserve-3d;*/
+    /*-webkit-perspective: 100000px;*/
+    /*-moz-perspective: 100000px;*/
+    /*perspective: 100000px;*/
+    /*-webkit-perspective-origin: 50% 50%;*/
+    /*-moz-perspective-origin: 50% 50%;*/
+    /*perspective-origin: 50% 50%;*/
+}
+.cube {
+    animation: rotate 5s infinite linear;
+    -webkit-animation: rotate 5s infinite linear;
+}
+
+/*outer部分*/
+.outer>div {
+    position: absolute;
+    padding: 10px;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    background-color: #B1A405;
+    border: solid 1px #eee;
+    color: #fff;
+    transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    /*-webkit-tran*/
+}
+.front {
+    transform: translateZ(100px);
+    -webkit-transform: translateZ(100px);
+}
+.back {
+    transform: translateZ(-100px) rotateY(180deg);
+    -webkit-transform: translateZ(-100px) rotateY(180deg);
+}
+.right {
+    transform: translateX(100px) rotateY(90deg);
+    -webkit-transform: translateX(100px) rotateY(90deg);
+}
+.left {
+    transform: translateX(-100px) rotateY(-90deg);
+    -webkit-transform: translateX(-100px) rotateY(-90deg);
+}
+.top {
+    transform: translateY(-100px) rotateX(-90deg);
+    -webkit-transform: translateY(-100px) rotateX(-90deg);
+}
+.bottom {
+    transform: translateY(100px) rotateX(90deg);
+    -webkit-transform: translateY(100px) rotateX(90deg);
+}
+.outer:hover>.front {
+    transform: translateZ(250px);
+    -webkit-transform: translateZ(250px);
+}
+.outer:hover>.back {
+    transform: translateZ(-200px) rotateY(180deg);
+    -webkit-transform: translateZ(-200px) rotateY(180deg);
+}
+.outer:hover>.right {
+    transform: translateX(200px) rotateY(90deg);
+    -webkit-transform: translateX(200px) rotateY(90deg);
+}
+.outer:hover>.left {
+    transform: translateX(-200px) rotateY(-90deg);
+    -webkit-transform: translateX(-200px) rotateY(-90deg);
+}
+.outer:hover>.top {
+    transform: translateY(-200px) rotateX(-90deg);
+    -webkit-transform: translateY(-200px) rotateX(-90deg);
+}
+.outer:hover>.bottom {
+    transform: translateY(200px) rotateX(90deg);
+    -webkit-transform: translateY(200px) rotateX(90deg);
+}
+
+/*inner部分*/
+.inner>div{
+    position:absolute;
+    top:51px;
+    left:51px;
+    width:102px;
+    height:102px;
+    padding-top: 1px;
+    padding-left: 1px;
+    background-color: #000;
+    transition: all 1s linear;
+    opacity: .9;
+}
+.inner>div>div{
+    float: left;
+    width: 33px;
+    height: 33px;
+    margin-bottom: 1px;
+    margin-right: 1px;
+}
+.inner>.white{
+    transform: translateZ(51px);
+    -webkit-transform: translateZ(51px);
+}
+.inner>.yellow{
+    transform: translateZ(-51px);
+    -webkit-transform: translateZ(-51px);
+}
+.inner>.green{
+    transform: translateY(-51px) rotateX(90deg);
+    -webkit-transform: translateY(-51px) rotateX(90deg);
+}
+.inner>.red{
+    transform: translateY(51px) rotateX(-90deg);
+    -webkit-transform: translateY(51px) rotateX(-90deg);
+}
+.inner>.blue{
+    transform:translateX(-51px) rotateY(-90deg);
+    -webkit-transform:translateX(-51px) rotateY(-90deg);
+}
+.inner>.orange{
+    transform: translateX(51px) rotateY(90deg);
+    -webkit-transform: translateX(51px) rotateY(90deg);
+}
+
+/*旋转动画*/
+@keyframes rotate {
+    0% {
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+    100% {
+        transform: rotateX(360deg) rotateY(360deg);
+    }
+}
+@-webkit-keyframes rotate {
+    0% {
+        -webkit-transform: rotateX(0deg) rotateY(0deg);
+    }
+    100% {
+        -webkit-transform: rotateX(360deg) rotateY(360deg);
+    }
+}
+
+/*各个颜色*/
+.orange>div{
+    background-color: #FF8041 !important;
+}
+.red>div{
+    background-color: #FE0000 !important;
+}
+.blue>div{
+    background-color: #0000FE !important;
+}
+.green>div{
+    background-color: #008001 !important;
+}
+.yellow>div{
+    background-color: #FFFF00 !important;
+}
+.white>div{
+    background-color: #eeeeee !important;
+}

@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    text-align: center;
+    margin-top: 5%;
+    width: 100%;
+}
+.nav{
+    text-align: right;
+}
+.nav>ul{
+    padding-top: .6rem;
+    padding-bottom: .4rem;
+    list-style: none;
+}
+.nav>ul>li{
+    display: inline;
+    margin-right: .5rem;
+}
+.nav>ul>li>a{
+    text-decoration: underline;
+    color: #333;
+    font-size: .6rem;
+    font-weight: bold;
+}
+.nav>ul>li>a:hover{
+    color: #00c;
+}
+.context-logo>img{
+    width: 10.5rem;
+    height: auto;
+}
+.context-form>span>input[type=text]{
+    width: 18rem;
+    height: 1.2rem;
+}
+.context-form>span>input[type=submit]{
+    margin-left: -.3rem;
+    width: 4rem;
+    height: 1.29rem;
+    color: #ffffff;
+    background: #3385ff;
+    font-size: .4rem;
+    border: 0;
+}
+.context-form>span>img{
+    position: absolute;
+    padding-top: .2rem;
+    margin-left: -1.5rem;
+    width: 1rem;
+}
+.context-form>span>img:hover{
+    cursor: pointer;
+}
+.footer{
+    margin: 1rem 0;
+    font-size: .5rem;
+    color: #999;
+}
+.footer>span{
+    margin-right: .1rem;
+}
+.footer a{
+    text-decoration: none;
+    color: #999;
+}
+.footer a:hover{
+    text-decoration: underline;
+}

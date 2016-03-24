@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>盒子实践</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        section{
+            margin: 10px auto;
+            border-bottom: solid 2px #cccccc;
+        }
+        .box1{
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            margin: 100px;
+            padding: 10px;
+            background-color: aqua;
+            border: solid 5px red;
+        }
+        .box2{
+            display: inline-block;
+            width: 130px;
+            height: 130px;
+            margin: 100px;
+            padding: 10px;
+            background-color: aqua;
+            border: solid 5px red;
+            box-sizing: border-box;
+        }
+        .shoes1,.shoes2{
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+            line-height: 100px;
+            text-align: center;
+        }
+
+        .column{
+            -webkit-column-count: 4;
+            column-count: 4;
+            -moz-column-count: 4;
+        }
+        .column>p{
+            text-indent: 20px;
+        }
+
+        .flex-box{
+            display: -webkit-flex;
+            -webkit-flex-direction: column;
+            -moz-flex-direction: column;
+            flex-direction: column;
+            height: 500px;
+        }
+        .flex1{
+            height: 100px;
+            background-color: orange;
+            -webkit-flex: 1;
+            -moz-flex: 1;
+            flex: 1;
+            -webkit-order: 3;
+            -moz-order: 3;
+            order: 3;
+        }
+        .flex2{
+            height: 100px;
+            background-color: aquamarine;
+            -webkit-flex: 1;
+            -moz-flex: 1;
+            flex: 1;
+            -webkit-order: 1;
+            -moz-order: 1;
+            order: 1;
+            display: -webkit-box;
+            display: -moz-box;
+            -webkit-box-pack: center;
+            -moz-box-pack: center;
+            -webkit-box-align: center;
+            -moz-box-align: center;
+
+        }
+        .flex3{
+            height: 200px;
+            background-color: red;
+            -webkit-flex: 1;
+            -moz-flex: 1;
+            flex: 1;
+            -webkit-order: 2;
+            -moz-order: 2;
+            order: 2;
+        }
+    </style>
+</head>
+<body>
+<!--盒子模型 and 怪异盒子模型-->
+<section>
+    <div class="box1">
+        <div class="shoes1">
+            普通盒子
+        </div>
+    </div>
+    <div class="box2">
+        <div class="shoes2">
+            怪异盒子
+        </div>
+    </div>
+</section>
+<!--columnCount垂直分栏-->
+<section>
+    <div class="column">
+        <p>In this paper we tackle the problem of recommendation in the scenarios with binary relevance data, when only a few (k) items are recommended to individual users. Past work on Collaborative Filtering (CF) has either not addressed the ranking problem for binary relevance datasets, or not specifically focused on improving top-k recommendations. To solve the problem we propose a new CF approach, Col- laborative Less-is-More Filtering (CLiMF). </p>
+        <p>In CLiMF the model parameters are learned by directly maximizing the Mean Reciprocal Rank (MRR), which is a well-known in- formation retrieval metric for capturing the performance of top-k recommendations. We achieve linear computational complexity by introducing a lower bound of the smoothed reciprocal rank metric. Experiments on two social network datasets demonstrate the effectiveness and the scalability of CLiMF, and show that CLiMF significantly outperforms a naive baseline and two state-of-the-art CF methods.</p>
+    </div>
+</section>
+<!--flex水平分栏+order-->
+<section class="flex-box">
+    <div class="flex1">flex1</div>
+    <div class="flex2">
+        flex《我在中间》
+    </div>
+    <div class="flex3">flex3</div>
+</section>
+
+
+</body>
+</html>
