@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>百度新闻后台管理</title>
+    <link rel="stylesheet" href="/stylesheets/amazeui.min.css">
+    <style>
+        .am-form legend{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<form class="am-form" action="news/addOneNew" method="post">
+    <fieldset>
+        <legend>新闻上传</legend>
+
+        <div class="am-form-group">
+            <label for="title">标题</label>
+            <input type="text" id="title" placeholder="输入新闻标题" name="title">
+        </div>
+
+        <div class="am-form-group">
+            <label for="imgUrl">图片链接</label>
+            <input type="text" id="imgUrl" placeholder="图片地址" name="imgUrl">
+        </div>
+
+        <div class="am-form-group">
+            <label>选择类别</label>
+            <br/>
+            <label class="am-radio-inline">
+                <input type="radio" value="bj" name="category">百家
+            </label>
+            <label class="am-radio-inline">
+                <input type="radio" value="bd" name="category">本地
+            </label>
+            <label class="am-radio-inline">
+                <input type="radio" value="tp" name="category">图片
+            </label>
+            <label class="am-radio-inline">
+                <input type="radio" value="yl" name="category">娱乐
+            </label>
+            <label class="am-radio-inline">
+                <input type="radio" value="sh" name="category">社会
+            </label>
+        </div>
+
+        <div class="am-form-group">
+            <label for="description">新闻描述</label>
+            <textarea rows="5" id="description" name="description"></textarea>
+        </div>
+
+        <p>
+            <button type="submit" class="am-btn am-btn-default">提交</button>
+        </p>
+    </fieldset>
+</form>
+<script src="/javascripts/jquery.min.js"></script>
+<script src="/javascripts/amazeui.min.js"></script>
+</body>
+</html>
