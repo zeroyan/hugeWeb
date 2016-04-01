@@ -2,6 +2,7 @@
  * Created by zeroyan on 16/2/22.
  */
 var db = require('../config/database');
+var xss = require('xss');
 
 Date.prototype.Format = function (format) {
     var o = {
@@ -100,7 +101,7 @@ News.prototype.findById = function (id, callback) {
 
 News.prototype.findByCate = function (cate, callback) {
     //验证cate必须为有效输入数据，并不能包含敏感字符
-    cate = escape(cate);
+    cate = xss(cate);
     if (cate.length >= 8) return;
 
     var sql = "SELECT * FROM news WHERE category =?";
@@ -130,11 +131,11 @@ News.prototype.addOneNew = function (oneNew, callback) {
             return;
         }
         var sql = "INSERT INTO news (title, imgUrl, description, createTime, category) VALUES " +
-            "('" + oneNew['title'] + "'," +
-            "'" + oneNew['imgUrl'] + "'," +
-            "'" + oneNew['description'] + "'," +
+            "('" + xss(oneNew['title']) + "'," +
+            "'" + xss(oneNew['imgUrl']) + "'," +
+            "'" + xss(oneNew['description']) + "'," +
             "'" + new Date().Format("yyyy-MM-dd hh:mm:ss") + "'," +
-            "'" + oneNew['category'] + "')";
+            "'" + xss(oneNew['category']) + "')";
         console.log(sql);
         connection.query(sql, function (err, results) {
             if (err) {
